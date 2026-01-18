@@ -1,0 +1,16 @@
+
+[package]
+name = "DnsResolverService"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+name = "dns_resolver_service"
+path = "src/lib.rs"
+crate-type=["cdylib"]
+
+[dependencies]
+x-com-lib = {path="../../xComRustLib"}
+url = "2.5.4"
+trust-dns-resolver = "0.23.2"
+bcos-lib = {path="../../bcos-lib"}

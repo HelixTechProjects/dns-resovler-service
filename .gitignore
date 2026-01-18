@@ -1,0 +1,11 @@
+**/target/
+**/.vscode/
+**/.idea/
+**/log/
+**/dxc/
+**/*.dxc
+**/Cargo.lock
+**/*.exe
+**/dxmesh.toml
+import-api-DnsResolverService-*.proto
+import-api-DnsResolverService-*.xproto

@@ -1,0 +1,27 @@
+message ResolveRequest {
+  //
+  string url = 1;
+  bool build_channel = 2;
+}
+
+message ResolveInfo {
+  int64 conn_id  = 1;
+  int64 channel_id = 2;
+}
+
+message CallData {
+  string contract_addr = 1;
+  string data = 2;
+}
+message CallResponse {
+  string value = 1;
+}
+//
+
+
+service DnsResolverService {
+  //@ 解析域名
+  rpc Resolve(ResolveRequest)returns(ResolveInfo);
+}
+
+    
